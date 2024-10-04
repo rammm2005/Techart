@@ -6,7 +6,7 @@ const HeroSection = () => {
         <>
             <div className="flex flex-row justify-center gap-[11rem] items-center mt-8">
                 <div className="flex flex-col gap-2 items-start">
-                    <h6 className="font-semibold text-lg">Welcome to my Portfolio</h6>
+                    <h6 className="font-semibold text-xl">Welcome to my Portfolio</h6>
                     <h1 className="text-7xl font-bold leading-19">Hi I’m
                         <p className="text-blue-600">Robert Junior</p>
                         Product Designer</h1>
