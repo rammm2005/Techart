@@ -79,7 +79,7 @@ const SwiperService = () => {
                     >
                         {service.map((data, index) => (
                             <SwiperSlide key={index}>
-                                <div className="group">
+                                <div className="group border border-slate-200 shadow-lg rounded-md">
                                     <article className="flex flex-col items-start gap-4 p-4 rounded-md cursor-pointer group-hover:bg-blue-500 transition-all ease-in-out duration-300">
                                         <img alt={`service ${data.title}`} className="w-20 h-20" src={data.image} />
                                         <h3 className="text-xl font-semibold group-hover:text-white text-wrap">
