@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import TestimonialsCard from '../Cards/TestimonialsCard';
+import TestimonialCard from '../Cards/TestimonialCard';
 
 // import required modules
 import { Navigation } from 'swiper/modules';
@@ -46,22 +46,22 @@ const TestimonialsSlider = () => {
             }}
          >
             <SwiperSlide className='pb-5 pl-2'>
-               <TestimonialsCard srcImg='./assets/images/Ellipse 3.png' rating={5} text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit!' name='Savannah Nguuyen' jobTitle='president of sales'  />
+               <TestimonialCard srcImg='./assets/images/Ellipse 3.png' rating={5} text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit!' name='Savannah Nguuyen' jobTitle='president of sales'  />
             </SwiperSlide>
             <SwiperSlide className='pb-5 pl-2'>
-               <TestimonialsCard srcImg='./assets/images/Ellipse 3-1.png' rating={5} text='Lorem ipsum adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit! dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit!' name='jenny wilson' jobTitle='medical assistant'  />
+               <TestimonialCard srcImg='./assets/images/Ellipse 3-1.png' rating={5} text='Lorem ipsum adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit! dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit!' name='jenny wilson' jobTitle='medical assistant'  />
             </SwiperSlide>
             <SwiperSlide className='pb-5 pl-2'>
-               <TestimonialsCard srcImg='./assets/images/Ellipse 3-2.png' rating={3} text='Lorem ipsum dolor sit amet consectetur adipi adipisicing elit. Placeat, velit!' name='esther howard' jobTitle='nursing assistant'  />
+               <TestimonialCard srcImg='./assets/images/Ellipse 3-2.png' rating={3} text='Lorem ipsum dolor sit amet consectetur adipi adipisicing elit. Placeat, velit!' name='esther howard' jobTitle='nursing assistant'  />
             </SwiperSlide>
             <SwiperSlide className='pb-5 pl-2'>
-               <TestimonialsCard srcImg='./assets/images/Ellipse 3-3.png' rating={2} text='Lorem  adipisicing elit. Placeat, velit!adipisicing elit. Placeat, velit! ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit.' name='cammeron williamson' jobTitle='marketing coordinator' />
+               <TestimonialCard srcImg='./assets/images/Ellipse 3-3.png' rating={2} text='Lorem  adipisicing elit. Placeat, velit!adipisicing elit. Placeat, velit! ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit.' name='cammeron williamson' jobTitle='marketing coordinator' />
             </SwiperSlide>
             <SwiperSlide className='pb-5 pl-2'>
-               <TestimonialsCard srcImg='./assets/images/Ellipse 3-1.png' rating={5} text='Lorem ipsum adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit! dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit!' name='jenny wilson' jobTitle='medical assistant'  />
+               <TestimonialCard srcImg='./assets/images/Ellipse 3-1.png' rating={5} text='Lorem ipsum adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit! dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit!' name='jenny wilson' jobTitle='medical assistant'  />
             </SwiperSlide>
             <SwiperSlide className='pb-5 pl-2'>
-               <TestimonialsCard srcImg='./assets/images/Ellipse 3.png' rating={5} text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit!' name='Savannah Nguuyen' jobTitle='president of sales'  />
+               <TestimonialCard srcImg='./assets/images/Ellipse 3.png' rating={5} text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit!' name='Savannah Nguuyen' jobTitle='president of sales'  />
             </SwiperSlide>
          </Swiper>
       </>
