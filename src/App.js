@@ -3,16 +3,18 @@ import Navbar from './Components/Layouts/Navbar/Navbar';
 import HeroSection from './Components/Layouts/Hero/HeroSection';
 import Sponsors from './Components/Layouts/Sponsor/Sponsor';
 import AboutMe from './Components/Layouts/AboutMe/AboutMe';
+import SwiperService from './Components/Service/ServiceSwiper';
 
 function App() {
   return (
     <>
       <Navbar />
-      <div className='px-16'>
+      <main className='px-16'>
         <HeroSection />
         <Sponsors />
         <AboutMe />
-      </div>
+        <SwiperService />
+      </main>
     </>
   );
 }
