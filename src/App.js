@@ -3,6 +3,7 @@ import Navbar from './Components/Layouts/Navbar/Navbar';
 import HeroSection from './Components/Layouts/Hero/HeroSection';
 import Sponsors from './Components/Layouts/Sponsor/Sponsor';
 import AboutMe from './Components/Layouts/AboutMe/AboutMe';
+import Projects from './Components/Layouts/Projects/Projects';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <HeroSection />
         <Sponsors />
         <AboutMe />
+        <Projects />
       </div>
     </>
   );
