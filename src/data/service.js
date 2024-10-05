@@ -1,7 +1,7 @@
 const service = [
     {
         'image': './assets/images/service/ux-design.png',
-        'title': 'Website / App Design UX / UI Design',
+        'title': 'Web Apps / Application Design UX / UI Design / Systems Design',
         'description': 'Creating Engaging Digital Experiences for Websites and Apps through UX/UI Design',
         'link': '#',
     },
@@ -25,7 +25,7 @@ const service = [
     },
     {
         'image': './assets/images/service/ux-design.png',
-        'title': 'Website / App Design UX / UI Design',
+        'title': 'Web Apps / Application Design UX / UI Design / Systems Design',
         'description': 'Creating Engaging Digital Experiences for Websites and Apps through UX/UI Design',
         'link': '#',
     },
