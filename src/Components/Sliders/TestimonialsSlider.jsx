@@ -29,7 +29,7 @@ const TestimonialsSlider = () => {
             </button>
          </div>
          <Swiper
-         className="mySwiper w-full pb-10 min-h-screen"
+         className="mySwiper w-full pb-10"
          modules={[Navigation]}
             spaceBetween={10}
             slidesPerView={4}

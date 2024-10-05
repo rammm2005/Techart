@@ -30,7 +30,7 @@ const BlogsSlider = () => {
             </button>
          </div>
          <Swiper
-         className="mySwiper w-full pb-10 min-h-screen"
+         className="mySwiper w-full pb-10"
          modules={[Navigation]}
             spaceBetween={10}
             slidesPerView={3}
@@ -47,7 +47,48 @@ const BlogsSlider = () => {
             }}
          >
             <SwiperSlide className='pb-5 pl-2'>
-               <BlogCard />
+               <BlogCard 
+                  img='./assets/images/image 1.png'
+                  date='30 september 2024'
+                  title='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
+                  desc='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis? Lorem ipsum, dolor sit amet consecttaque vero dolores deleniti doloribus blanditiis?'
+                  like='99'
+                  comments='30'
+                  share='16'
+               />
+            </SwiperSlide>
+            <SwiperSlide className='pb-5 pl-2'>
+               <BlogCard 
+                  img='./assets/images/image 1-2.png'
+                  date='30 september 2024'
+                  title='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
+                  desc='Lorem ipsumet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis? Lorem ipsum, dolor sit amet c. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
+                  like='99'
+                  comments='30'
+                  share='16'
+               />
+            </SwiperSlide>
+            <SwiperSlide className='pb-5 pl-2'>
+               <BlogCard 
+                  img='./assets/images/image 1-1.png'
+                  date='30 september 2024'
+                  title='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
+                  desc='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti d amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
+                  like='99'
+                  comments='30'
+                  share='16'
+               />
+            </SwiperSlide>
+            <SwiperSlide className='pb-5 pl-2'>
+               <BlogCard 
+                  img='./assets/images/image 1-2.png'
+                  date='30 september 2024'
+                  title='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
+                  desc='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus  dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
+                  like='99'
+                  comments='30'
+                  share='16'
+               />
             </SwiperSlide>
          </Swiper>
       </>
