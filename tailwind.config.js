@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'primary': "#257F80",         // Biru muda
+        'primary': "#0077FF",         // Biru muda
         'secondary': "#75C9BF",       // Biru hijau
         'primer': '#B3ECEC',          // Biru muda pastel
         'black': "#000000",           // Hitam
