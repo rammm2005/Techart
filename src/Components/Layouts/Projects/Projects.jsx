@@ -2,7 +2,7 @@ import Button from "../../Button/Button";
 import PortoCard from "../../Cards/PortoCard";
 
 const Projects = () => {
-   return(
+   return (
       <>
          <section className="min-h-screen my-24 flex flex-col items-center gap-12">
             <div className="title text-center w-1/2">
