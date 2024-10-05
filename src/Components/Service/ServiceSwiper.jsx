@@ -56,19 +56,19 @@ const SwiperService = () => {
                         centeredSlides={false}
                         breakpoints={{
                             320: {
-                                slidesPerView: 1,
+                                slidesPerView: 1.5,
                             },
                             480: {
-                                slidesPerView: 2,
+                                slidesPerView: 2.5,
                             },
                             768: {
-                                slidesPerView: 3,
+                                slidesPerView: 3.5,
                             },
                             1024: {
-                                slidesPerView: 3,
+                                slidesPerView: 3.5,
                             },
                             1280: {
-                                slidesPerView: 3,
+                                slidesPerView: 3.5,
                             },
                         }}
                         onSwiper={(swiper) => {
