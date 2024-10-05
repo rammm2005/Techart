@@ -1,13 +1,15 @@
-export default function Button({ className, text, startIcon, endIcon }) {
+export default function Button({ className, text, startIcon, endIcon, isIconOnly = false, onClick }) {
     return (
         <>
-            <button className={`flex flex-row items-center ${className}`}>
+            <button onClick={onClick} className={`flex flex-row items-center ${className}`}>
                 {startIcon ? (
                     <span>
                         {startIcon}
                     </span>
                 ) : null}
-                <p>{text}</p>
+                {isIconOnly ? null : (
+                    <p>{text}</p>
+                )}
                 {endIcon ? (
                     <span>
                         {endIcon}

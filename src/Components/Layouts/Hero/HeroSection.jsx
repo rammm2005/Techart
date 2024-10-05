@@ -4,7 +4,7 @@ import { GoDownload } from "react-icons/go";
 const HeroSection = () => {
     return (
         <>
-            <div className="flex flex-row justify-center gap-[11rem] items-center mt-8">
+            <section className="flex flex-row justify-center gap-[11rem] items-center mt-8">
                 <div className="flex flex-col gap-2 items-start">
                     <h6 className="font-semibold text-xl">Welcome to my Portfolio</h6>
                     <h1 className="text-7xl font-bold leading-19">Hi I’m
@@ -22,7 +22,7 @@ const HeroSection = () => {
                 <div className="relative">
                     <img className="w-full h-auto " alt="profile" src="./assets/images/profile.png" />
                 </div>
-            </div>
+            </section>
         </>
     )
 }
