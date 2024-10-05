@@ -14,11 +14,13 @@ import { GoArrowLeft } from "react-icons/go";
 import { GoArrowRight } from "react-icons/go";
 import BlogCard from '../Cards/BlogCard';
 
+import blogs from '../../data/blogs';
+
 
 const BlogsSlider = () => {
    const prevRef = useRef(null);
    const nextRef = useRef(null);
-
+   
    return(
       <>
          <div className="flex space-x-4">
@@ -46,50 +48,22 @@ const BlogsSlider = () => {
                swiper.navigation.update();
             }}
          >
-            <SwiperSlide className='pb-5 pl-2'>
-               <BlogCard 
-                  img='./assets/images/image 1.png'
-                  date='30 september 2024'
-                  title='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
-                  desc='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis? Lorem ipsum, dolor sit amet consecttaque vero dolores deleniti doloribus blanditiis?'
-                  like='99'
-                  comments='30'
-                  share='16'
-               />
-            </SwiperSlide>
-            <SwiperSlide className='pb-5 pl-2'>
-               <BlogCard 
-                  img='./assets/images/image 1-2.png'
-                  date='30 september 2024'
-                  title='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
-                  desc='Lorem ipsumet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis? Lorem ipsum, dolor sit amet c. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
-                  like='99'
-                  comments='30'
-                  share='16'
-               />
-            </SwiperSlide>
-            <SwiperSlide className='pb-5 pl-2'>
-               <BlogCard 
-                  img='./assets/images/image 1-1.png'
-                  date='30 september 2024'
-                  title='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
-                  desc='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti d amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
-                  like='99'
-                  comments='30'
-                  share='16'
-               />
-            </SwiperSlide>
-            <SwiperSlide className='pb-5 pl-2'>
-               <BlogCard 
-                  img='./assets/images/image 1-2.png'
-                  date='30 september 2024'
-                  title='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
-                  desc='Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus  dolor sit amet consectetur adipisicing elit. Perferendis itaque vero dolores deleniti doloribus blanditiis?'
-                  like='99'
-                  comments='30'
-                  share='16'
-               />
-            </SwiperSlide>
+            {
+               blogs.map((data, index) => (
+                  <SwiperSlide className='pb-5 pl-2' key={index}>
+                     <BlogCard 
+                        img={data.img}
+                        date={data.date}
+                        title={data.title}
+                        desc={data.desc}
+                        like={data.like}
+                        comments={data.comments}
+                        share={data.share}
+                        />
+                  </SwiperSlide>
+                  )
+               )
+            }
          </Swiper>
       </>
    )

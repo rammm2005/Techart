@@ -16,8 +16,8 @@ function App() {
         <HeroSection />
         <Sponsors />
         <AboutMe />
-        <Projects />
         <SwiperService />
+        <Projects />
         <Testimonials />
         <Blogs />
       </main>

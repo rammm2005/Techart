@@ -18,6 +18,7 @@ const SwiperService = () => {
         if (swiperRef.current) swiperRef.current.slideNext();
         console.log("swiper next");
     };
+    
 
     return (
         <>

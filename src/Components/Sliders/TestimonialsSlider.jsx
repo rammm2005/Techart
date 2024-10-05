@@ -13,6 +13,8 @@ import { useRef } from "react";
 import { GoArrowLeft } from "react-icons/go";
 import { GoArrowRight } from "react-icons/go";
 
+import testimonials from '../../data/testimonials';
+
 
 const TestimonialsSlider = () => {
    const prevRef = useRef(null);
@@ -45,24 +47,18 @@ const TestimonialsSlider = () => {
                swiper.navigation.update();
             }}
          >
-            <SwiperSlide className='pb-5 pl-2'>
-               <TestimonialCard srcImg='./assets/images/Ellipse 3.png' rating={5} text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit!' name='Savannah Nguuyen' jobTitle='president of sales'  />
-            </SwiperSlide>
-            <SwiperSlide className='pb-5 pl-2'>
-               <TestimonialCard srcImg='./assets/images/Ellipse 3-1.png' rating={5} text='Lorem ipsum adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit! dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit!' name='jenny wilson' jobTitle='medical assistant'  />
-            </SwiperSlide>
-            <SwiperSlide className='pb-5 pl-2'>
-               <TestimonialCard srcImg='./assets/images/Ellipse 3-2.png' rating={3} text='Lorem ipsum dolor sit amet consectetur adipi adipisicing elit. Placeat, velit!' name='esther howard' jobTitle='nursing assistant'  />
-            </SwiperSlide>
-            <SwiperSlide className='pb-5 pl-2'>
-               <TestimonialCard srcImg='./assets/images/Ellipse 3-3.png' rating={2} text='Lorem  adipisicing elit. Placeat, velit!adipisicing elit. Placeat, velit! ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit.' name='cammeron williamson' jobTitle='marketing coordinator' />
-            </SwiperSlide>
-            <SwiperSlide className='pb-5 pl-2'>
-               <TestimonialCard srcImg='./assets/images/Ellipse 3-1.png' rating={5} text='Lorem ipsum adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit! dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit!' name='jenny wilson' jobTitle='medical assistant'  />
-            </SwiperSlide>
-            <SwiperSlide className='pb-5 pl-2'>
-               <TestimonialCard srcImg='./assets/images/Ellipse 3.png' rating={5} text='Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, velit! adipisicing elit. Placeat, velit!' name='Savannah Nguuyen' jobTitle='president of sales'  />
-            </SwiperSlide>
+            {
+               testimonials.map((data, index) => (
+                  <SwiperSlide className='pb-5 pl-2'>
+                     <TestimonialCard 
+                     img={data.img} 
+                     rating={data.rating}
+                     text={data.text}
+                     name={data.name}
+                     jobTitle={data.jobTitle}  />
+                  </SwiperSlide>
+               )
+            )}
          </Swiper>
       </>
    )
