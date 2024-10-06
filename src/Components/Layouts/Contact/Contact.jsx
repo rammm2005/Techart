@@ -29,6 +29,7 @@ const Contact = () => {
                   </div>
                   <input type="text" placeholder="How can we help you? enter your subject*" className="w-full rounded border-none px-4 py-2 text-gray-900 placeholder:text-gray-400 outline-none"/>
                   <textarea rows='5' placeholder="How can we help you?" className="w-full rounded border-none px-4 py-2 text-gray-900 placeholder:text-gray-400 outline-none"></textarea>
+                  <button className="py-3 px-8 rounded-3xl w-fit text-white font-bold bg-blue-700">Request Now</button>
                </div>
             </div>
          </section>
